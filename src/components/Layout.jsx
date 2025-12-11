@@ -32,7 +32,7 @@ const Layout = () => {
         <div className="container flex-between">
           <Link to="/" className="logo">
             <img src={logo} alt="Logo" />
-            TRIVIE INTERIORS
+            TRIVIE INTERRIORS
           </Link>
 
           {/* Desktop Nav */}

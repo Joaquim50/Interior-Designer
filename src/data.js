@@ -267,44 +267,44 @@ export const services = [
   },
 ];
 export const sectors = [
-  {
-    id: "residential",
-    title: "Luxury Residential Interiors",
-    headline: "Your Sanctuary, Perfected",
-    gallery: [
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80",
-      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1920&q=80",
-    ],
-  },
-  {
-    id: "corporate",
-    title: "Corporate Office Fit-Outs",
-    headline: "Environments that Boost Productivity & Reflect Your Brand",
-    gallery: [
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80",
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1920&q=80",
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1920&q=80",
-    ],
-  },
-  {
-    id: "hospitality",
-    title: "Hospitality & Hotel Interiors",
-    headline: "Spaces that Welcome, Impress, and Endure",
-    gallery: [
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80",
-      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1920&q=80",
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80",
-    ],
-  },
-  {
-    id: "datacentre",
-    title: "Data Centre Interiors",
-    headline: "Precision-Engineered Interiors for Critical Environments",
-    gallery: [
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80",
-      "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=1920&q=80",
-      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1920&q=80",
-    ],
-  },
+  // {
+  //   id: "residential",
+  //   title: "Luxury Residential Interiors",
+  //   headline: "Your Sanctuary, Perfected",
+  //   gallery: [
+  //     "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=80",
+  //     "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80",
+  //     "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1920&q=80",
+  //   ],
+  // },
+  // {
+  //   id: "corporate",
+  //   title: "Corporate Office Fit-Outs",
+  //   headline: "Environments that Boost Productivity & Reflect Your Brand",
+  //   gallery: [
+  //     "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80",
+  //     "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1920&q=80",
+  //     "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1920&q=80",
+  //   ],
+  // },
+  // {
+  //   id: "hospitality",
+  //   title: "Hospitality & Hotel Interiors",
+  //   headline: "Spaces that Welcome, Impress, and Endure",
+  //   gallery: [
+  //     "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80",
+  //     "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1920&q=80",
+  //     "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80",
+  //   ],
+  // },
+  // {
+  //   id: "datacentre",
+  //   title: "Data Centre Interiors",
+  //   headline: "Precision-Engineered Interiors for Critical Environments",
+  //   gallery: [
+  //     "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80",
+  //     "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=1920&q=80",
+  //     "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1920&q=80",
+  //   ],
+  // },
 ];

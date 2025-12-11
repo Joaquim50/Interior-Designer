@@ -111,24 +111,30 @@ const ProjectLightbox = ({ project, onClose }) => {
 
               {/* Case Study Sections */}
               {project.challenge && (
-                <div className="story-section">
-                  <h3 className="section-label">The Challenge</h3>
-                  <p className="section-text">{project.challenge}</p>
-                </div>
+                <>
+                  <div className="story-section">
+                    <h3 className="section-label">The Challenge</h3>
+                    <div className="section-text" dangerouslySetInnerHTML={{ __html: project.the_challenge_html || project.challenge }} />
+                  </div>
+                </>
               )}
 
               {project.solution && (
-                <div className="story-section">
-                  <h3 className="section-label">Our Solution</h3>
-                  <p className="section-text">{project.solution}</p>
-                </div>
+                <>
+                  <div className="story-section">
+                    <h3 className="section-label">Our Solution</h3>
+                    <div className="section-text" dangerouslySetInnerHTML={{ __html: project.our_solution_html || project.solution }} />
+                  </div>
+                </>
               )}
 
               {project.result && (
-                <div className="story-section">
-                  <h3 className="section-label">The Result</h3>
-                  <p className="section-text">{project.result}</p>
-                </div>
+                <>
+                  <div className="story-section">
+                    <h3 className="section-label">The Result</h3>
+                    <div className="section-text" dangerouslySetInnerHTML={{ __html: project.the_result_html || project.result }} />
+                  </div>
+                </>
               )}
 
               {/* Fallback if no case study content */}
