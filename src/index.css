@@ -2159,6 +2159,52 @@ footer {
   color: var(--color-text-light);
 }
 
+.section-text ol,
+.section-text ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  list-style-position: outside;
+}
+
+.section-text ol {
+  list-style-type: decimal;
+}
+
+.section-text ul {
+  list-style-type: disc;
+}
+
+.section-text li {
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+  color: var(--color-text-light);
+}
+
+.section-text p {
+  margin-bottom: 1rem;
+}
+
+.section-text p:last-child {
+  margin-bottom: 0;
+}
+
+.section-text strong {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.section-text em {
+  font-style: italic;
+}
+
+.section-text u {
+  text-decoration: underline;
+}
+
+.section-text s {
+  text-decoration: line-through;
+}
+
 /* Responsive - Tablet */
 @media (max-width: 1024px) {
   .lightbox-content {
