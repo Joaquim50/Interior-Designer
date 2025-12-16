@@ -7,8 +7,7 @@ import { motion } from "framer-motion";
 const Process = () => {
   const heroSlides = [
     {
-      image:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80",
+      image: "/images/process/_PIX4667.jpg",
       duration: 5000,
     },
   ];
@@ -21,7 +20,7 @@ const Process = () => {
       description:
         "We begin with an in-depth consultation to understand your lifestyle, preferences, and functional needs. We analyze the site conditions and discuss your budget and timeline to establish a clear project roadmap.",
       image:
-        "https://images.unsplash.com/photo-1556912172-45b7abe8ce8e?auto=format&fit=crop&w=800&q=80",
+        "/images/process/process-one.jpg",
       buttonText: "Schedule Consultation",
       buttonLink: "/contact",
     },
@@ -32,7 +31,7 @@ const Process = () => {
       description:
         "Our design team translates your requirements into a cohesive concept. We create detailed 2D layouts and photorealistic 3D visualizations, allowing you to experience your future space before construction begins.",
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+        "/images/process/process-two.jpg",
       buttonText: "View Design Portfolio",
       buttonLink: "/portfolio",
     },
@@ -43,7 +42,7 @@ const Process = () => {
       description:
         "With the design finalized, our skilled craftsmen take over. We manage the entire build process with precision, ensuring quality control, timely procurement, and seamless coordination of all agencies on site.",
       image:
-        "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80",
+        "/images/process/process-three.jpg",
       buttonText: "See Our Standards",
       buttonLink: "/services",
     },
@@ -54,7 +53,7 @@ const Process = () => {
       description:
         "The final phase involves curating furniture, art, and accessories to elevate the space. We conduct a thorough quality check and walkthrough before handing over the keys to your ready-to-move-in dream space.",
       image:
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+        "/images/process/process-four.jpg",
       buttonText: "Book Final Walkthrough",
       buttonLink: "/contact",
     },
