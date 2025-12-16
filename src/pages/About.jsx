@@ -5,8 +5,7 @@ import HeroSlider from "../components/HeroSlider";
 const About = () => {
   const heroSlides = [
     {
-      image:
-        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1920&q=80",
+      image:"/images/about/hero_slider/_PIX5211.jpg",
       alt: "Professional Office Interior",
     },
   ];
@@ -330,7 +329,7 @@ const About = () => {
             <div className="team-grid">
               <div className="team-member">
                 <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
+                  src="/images/about/our_team/Sanjiv.jpeg"
                   alt="Sanjiv C. Mehra"
                   style={{
                     width: "100%",
@@ -347,7 +346,7 @@ const About = () => {
               </div>
               <div className="team-member">
                 <img
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+                  src="images/about/our_team/Kavash.jpg"
                   alt="Kavash Mehra"
                   style={{
                     width: "100%",
