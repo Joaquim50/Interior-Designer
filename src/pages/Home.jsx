@@ -16,7 +16,7 @@ const Home = () => {
   const heroSlides = [
     {
       image:
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=80",
+        "/images/home/hero_slider/DSC08465.jpg",
       title: "Just Imagine, We'll Create",
       subtitle: "Turnkey Interior Solutions for Discerning Clients",
       description: "",
@@ -28,7 +28,7 @@ const Home = () => {
     },
     {
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80",
+        "/images/home/hero_slider/DSC08722.jpg",
       title: "Modern Luxury Living",
       subtitle: "Elevate Your Lifestyle",
       description:
@@ -39,7 +39,7 @@ const Home = () => {
     },
     {
       image:
-        "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1920&q=80",
+        "/images/home/hero_slider/DSC09255.jpg",
       title: "Timeless Elegance",
       subtitle: "Crafted for You",
       description: "Bespoke designs that stand the test of time.",
@@ -49,7 +49,7 @@ const Home = () => {
     },
     {
       image:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80",
+        "/images/home/hero_slider/DSC09429.jpg",
       title: "Commercial Excellence",
       subtitle: "Inspiring Workspaces",
       description:
@@ -60,7 +60,7 @@ const Home = () => {
     },
     {
       image:
-        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80",
+        "/images/home/hero_slider/PIX08564.jpg",
       title: "Coastal Serenity",
       subtitle: "Nature Meets Design",
       description: "Bringing the outdoors in with organic textures and light.",
@@ -68,6 +68,15 @@ const Home = () => {
       ctaLink: "/contact",
       duration: 5000,
     },
+    {
+      image: "/images/home/hero_slider/_PIX4683.jpg",
+      title: "Twilight Haven",
+      subtitle: "Luxury in Harmony with Nature",
+      description: "A seamless blend of warm interiors and tranquil outdoor landscapes, designed for quiet moments and meaningful gatherings.",
+      ctaText: "Explore the Space",
+      ctaLink: "/contact",
+      duration: 5000,
+    }
   ];
 
   const featuredProjects = projects.slice(0, 3);
@@ -105,7 +114,7 @@ const Home = () => {
             </div>
             <div className="about-image-wrapper">
               <img
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+                src="images/home/PIX09196.jpg"
                 alt="Modern Interior Design"
                 className="about-image"
                 style={{
