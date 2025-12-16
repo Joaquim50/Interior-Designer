@@ -39,12 +39,12 @@ const PortfolioCategories = () => {
           const mappedProjects = data.map((item) => ({
             id: item._id,
             title: item.title,
-            category: Array.isArray(item.category) && item.category.length > 0 
-              ? item.category[0] 
+            category: Array.isArray(item.category) && item.category.length > 0
+              ? item.category[0]
               : "",
             tags: Array.isArray(item.category) ? item.category : [],
             subcategory: item.subcategory || "",
-            image: item.thumbnail_image 
+            image: item.thumbnail_image
               ? formatImageUrl(item.thumbnail_image)
               : "",
             gallery: item.image_gallery
@@ -210,9 +210,8 @@ const PortfolioCategories = () => {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`category-btn ${
-                activeCategory === category ? "active" : ""
-              }`}
+              className={`category-btn ${activeCategory === category ? "active" : ""
+                }`}
               aria-pressed={activeCategory === category}
             >
               {category}
@@ -233,7 +232,7 @@ const PortfolioCategories = () => {
                 }
                 alt={mainProject.title}
                 className="tile-image"
-                
+
               />
               <div className="tile-overlay">
                 <h3 className="tile-title">{mainProject.title}</h3>
@@ -260,9 +259,8 @@ const PortfolioCategories = () => {
                     <button
                       key={idx}
                       onClick={() => setMainImageIndex(idx)}
-                      className={`carousel-dot ${
-                        idx === mainImageIndex ? "active" : ""
-                      }`}
+                      className={`carousel-dot ${idx === mainImageIndex ? "active" : ""
+                        }`}
                       aria-label={`Go to image ${idx + 1}`}
                     />
                   ))}
@@ -276,17 +274,17 @@ const PortfolioCategories = () => {
             <div className="bento-tile bento-tile-top-right">
               <div className="tile-carousel">
                 <img
-                style={{ objectFit: 'fit' }}
+                  style={{ objectFit: 'fit' }}
                   src={
                     topRightProject.gallery?.[
-                      topRightIndex % (topRightProject.gallery?.length || 1)
+                    topRightIndex % (topRightProject.gallery?.length || 1)
                     ] || topRightProject.image
                   }
-                  alt={topRightProject.subcategory || topRightProject.title}
+                  alt={topRightProject.title || topRightProject.title}
                   className="tile-image"
                 />
                 <div className="tile-overlay">
-                  <h4 className="tile-label">{topRightProject.subcategory || topRightProject.category}</h4>
+                  <h4 className="tile-label">{topRightProject.title || topRightProject.title}</h4>
                 </div>
                 {topRightProject.gallery && topRightProject.gallery.length > 1 && (
                   <div className="carousel-dots">
@@ -294,9 +292,8 @@ const PortfolioCategories = () => {
                       <button
                         key={idx}
                         onClick={() => setTopRightIndex(idx)}
-                        className={`carousel-dot ${
-                          idx === topRightIndex ? "active" : ""
-                        }`}
+                        className={`carousel-dot ${idx === topRightIndex ? "active" : ""
+                          }`}
                         aria-label={`Go to image ${idx + 1}`}
                       />
                     ))}
@@ -311,17 +308,17 @@ const PortfolioCategories = () => {
             <div className="bento-tile bento-tile-bottom-right">
               <div className="tile-carousel">
                 <img
-                style={{ objectFit: 'fit' }}
+                  style={{ objectFit: 'fit' }}
                   src={
                     bottomRightProject.gallery?.[
-                      bottomRightIndex % (bottomRightProject.gallery?.length || 1)
+                    bottomRightIndex % (bottomRightProject.gallery?.length || 1)
                     ] || bottomRightProject.image
                   }
-                  alt={bottomRightProject.subcategory || bottomRightProject.title}
+                  alt={bottomRightProject.title}
                   className="tile-image"
                 />
                 <div className="tile-overlay">
-                  <h4 className="tile-label">{bottomRightProject.subcategory || bottomRightProject.category}</h4>
+                  <h4 className="tile-label">{bottomRightProject.title}</h4>
                 </div>
                 {bottomRightProject.gallery && bottomRightProject.gallery.length > 1 && (
                   <div className="carousel-dots">
@@ -329,9 +326,8 @@ const PortfolioCategories = () => {
                       <button
                         key={idx}
                         onClick={() => setBottomRightIndex(idx)}
-                        className={`carousel-dot ${
-                          idx === bottomRightIndex ? "active" : ""
-                        }`}
+                        className={`carousel-dot ${idx === bottomRightIndex ? "active" : ""
+                          }`}
                         aria-label={`Go to image ${idx + 1}`}
                       />
                     ))}
