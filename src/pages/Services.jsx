@@ -8,18 +8,8 @@ const Services = () => {
   const heroSlides = [
     {
       image:
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=80",
+        "images/services/_PIX6681.jpg",
       alt: "Luxury Interior 1",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80",
-      alt: "Luxury Interior 2",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80",
-      alt: "Office Interior",
     },
   ];
 
@@ -32,7 +22,7 @@ const Services = () => {
         "We've mastered the unique requirements of each sector, delivering spaces that function perfectly for their intended purpose.",
       cta: "View Sector Portfolio",
       image:
-        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+        "images/services/PIX00400.jpg",
       link: "/services",
     },
     {
@@ -43,7 +33,7 @@ const Services = () => {
         "We transform houses into homes that reflect your personality and lifestyle. From apartments to villas, we create spaces that balance beauty, comfort, and functionality with timeless elegance.",
       cta: "Explore Residential Projects",
       image:
-        "https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?auto=format&fit=crop&w=800&q=80",
+        "images/services/_PIX3637.jpg",
       link: "/services",
     },
     {
@@ -54,7 +44,7 @@ const Services = () => {
         "Create workspaces that inspire innovation and foster collaboration. We design and execute corporate interiors that enhance employee wellbeing while powerfully communicating your brand identiy.",
       cta: "View Office Projects",
       image:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+        "images/services/_PIX4578.jpg",
       link: "/services",
     },
     {
@@ -65,7 +55,7 @@ const Services = () => {
         "Experience kitchens that blend sophisticated aesthetics with ergonomic efficiecy. Our custom modular solutions maximize space utilization while creating the heart of your home.",
       cta: "Explore Kitchen Designs",
       image:
-        "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80",
+        "images/services/PIX09001.jpg",
       link: "/services",
     },
     {
@@ -76,7 +66,7 @@ const Services = () => {
         "Breathe new life into your existting spaces with our comprehensive renovation services. We reimagine and rebuild while respecting your timeline and mimizing disruption.",
       cta: "Discuss Renovation",
       image:
-        "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
+        "images/services/PIX_4111.jpg",
       link: "/services",
     },
     {
@@ -87,7 +77,7 @@ const Services = () => {
         "Complete your space with professional styling that adds personality and character. We select and arrange furnishings, artwork, and accessories to create cohesive, magazine-worthy interiors.",
       cta: "Explore Styling Services",
       image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+        "images/services/DSC08708.jpg",
       link: "/services",
     },
   ];
