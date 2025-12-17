@@ -12,11 +12,12 @@ import {
 } from "lucide-react";
 import HeroSlider from "../components/HeroSlider";
 
+import heroImg from "../assets/contact/DSC08774.jpg";
+
 const Contact = () => {
   const heroSlides = [
     {
-      image:
-        "/images/contact/DSC08774.jpg",
+      image: heroImg,
       alt: "Contact Hero",
     },
   ];

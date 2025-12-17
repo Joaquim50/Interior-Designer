@@ -4,11 +4,18 @@ import { ArrowRight } from "lucide-react";
 import HeroSlider from "../components/HeroSlider";
 import ProcessSection from "../components/ProcessSection";
 
+import heroImg from "../assets/services/_PIX6681.jpg";
+import expertiseImg from "../assets/services/PIX00400.jpg";
+import resImg from "../assets/services/_PIX3637.jpg";
+import commImg from "../assets/services/_PIX4578.jpg";
+import kitchenImg from "../assets/services/PIX09001.jpg";
+import renoImg from "../assets/services/PIX_4111.jpg";
+import stylingImg from "../assets/services/DSC08708.jpg";
+
 const Services = () => {
   const heroSlides = [
     {
-      image:
-        "images/services/_PIX6681.jpg",
+      image: heroImg,
       alt: "Luxury Interior 1",
     },
   ];
@@ -21,8 +28,7 @@ const Services = () => {
       description:
         "We've mastered the unique requirements of each sector, delivering spaces that function perfectly for their intended purpose.",
       cta: "View Sector Portfolio",
-      image:
-        "images/services/PIX00400.jpg",
+      image: expertiseImg,
       link: "/services",
     },
     {
@@ -32,8 +38,7 @@ const Services = () => {
       description:
         "We transform houses into homes that reflect your personality and lifestyle. From apartments to villas, we create spaces that balance beauty, comfort, and functionality with timeless elegance.",
       cta: "Explore Residential Projects",
-      image:
-        "images/services/_PIX3637.jpg",
+      image: resImg,
       link: "/services",
     },
     {
@@ -43,8 +48,7 @@ const Services = () => {
       description:
         "Create workspaces that inspire innovation and foster collaboration. We design and execute corporate interiors that enhance employee wellbeing while powerfully communicating your brand identiy.",
       cta: "View Office Projects",
-      image:
-        "images/services/_PIX4578.jpg",
+      image: commImg,
       link: "/services",
     },
     {
@@ -54,8 +58,7 @@ const Services = () => {
       description:
         "Experience kitchens that blend sophisticated aesthetics with ergonomic efficiecy. Our custom modular solutions maximize space utilization while creating the heart of your home.",
       cta: "Explore Kitchen Designs",
-      image:
-        "images/services/PIX09001.jpg",
+      image: kitchenImg,
       link: "/services",
     },
     {
@@ -65,8 +68,7 @@ const Services = () => {
       description:
         "Breathe new life into your existting spaces with our comprehensive renovation services. We reimagine and rebuild while respecting your timeline and mimizing disruption.",
       cta: "Discuss Renovation",
-      image:
-        "images/services/PIX_4111.jpg",
+      image: renoImg,
       link: "/services",
     },
     {
@@ -76,8 +78,7 @@ const Services = () => {
       description:
         "Complete your space with professional styling that adds personality and character. We select and arrange furnishings, artwork, and accessories to create cohesive, magazine-worthy interiors.",
       cta: "Explore Styling Services",
-      image:
-        "images/services/DSC08708.jpg",
+      image: stylingImg,
       link: "/services",
     },
   ];

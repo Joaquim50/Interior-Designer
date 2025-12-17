@@ -4,10 +4,16 @@ import Section from "../components/Section";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
+import heroImg from "../assets/process/_PIX4667.jpg";
+import step1Img from "../assets/process/process-one.jpg";
+import step2Img from "../assets/process/process-two.jpg";
+import step3Img from "../assets/process/process-three.jpg";
+import step4Img from "../assets/process/process-four.jpg";
+
 const Process = () => {
   const heroSlides = [
     {
-      image: "/images/process/_PIX4667.jpg",
+      image: heroImg,
       duration: 5000,
     },
   ];
@@ -19,8 +25,7 @@ const Process = () => {
       subtitle: "Understanding Your Vision",
       description:
         "We begin with an in-depth consultation to understand your lifestyle, preferences, and functional needs. We analyze the site conditions and discuss your budget and timeline to establish a clear project roadmap.",
-      image:
-        "/images/process/process-one.jpg",
+      image: step1Img,
       buttonText: "Schedule Consultation",
       buttonLink: "/contact",
     },
@@ -30,8 +35,7 @@ const Process = () => {
       subtitle: "Concept & Design Development",
       description:
         "Our design team translates your requirements into a cohesive concept. We create detailed 2D layouts and photorealistic 3D visualizations, allowing you to experience your future space before construction begins.",
-      image:
-        "/images/process/process-two.jpg",
+      image: step2Img,
       buttonText: "View Design Portfolio",
       buttonLink: "/portfolio",
     },
@@ -41,8 +45,7 @@ const Process = () => {
       subtitle: "Bringing Design to Life",
       description:
         "With the design finalized, our skilled craftsmen take over. We manage the entire build process with precision, ensuring quality control, timely procurement, and seamless coordination of all agencies on site.",
-      image:
-        "/images/process/process-three.jpg",
+      image: step3Img,
       buttonText: "See Our Standards",
       buttonLink: "/services",
     },
@@ -52,8 +55,7 @@ const Process = () => {
       subtitle: "The Final Flourish",
       description:
         "The final phase involves curating furniture, art, and accessories to elevate the space. We conduct a thorough quality check and walkthrough before handing over the keys to your ready-to-move-in dream space.",
-      image:
-        "/images/process/process-four.jpg",
+      image: step4Img,
       buttonText: "Book Final Walkthrough",
       buttonLink: "/contact",
     },
