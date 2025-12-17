@@ -303,7 +303,7 @@ const About = () => {
           >
             <div className="about-content">
               <span className="subheading">
-                The Minds Ensuring Your Project's Success
+                Managing Director Sanjiv C. Mehra brings 15 years of construction expertise
               </span>
               <h2 className="heading-lg">
                 Years of Combined Expertise Working For You
