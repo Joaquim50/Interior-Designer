@@ -161,24 +161,6 @@
 //             </h3>
 //             <div
 //               className="grid"
-//               style={{
-//                 gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-//                 gap: "1.5rem",
-//               }}
-//             >
-//               {project.gallery.map((img, index) => (
-//                 <img
-//                   key={index}
-//                   src={img}
-//                   alt={`Gallery ${index + 1}`}
-//                   style={{ width: "100%", borderRadius: "4px" }}
-//                 />
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-//       </Section>
-//     </div>
 //   );
 // };
 

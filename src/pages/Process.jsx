@@ -85,7 +85,7 @@ const Process = () => {
               className={`process-step ${index % 2 !== 0 ? "reverse" : ""}`}
             >
               <div className="step-image-wrapper">
-                <img src={step.image} alt={step.title} className="step-image" />
+                <img src={step.image} alt={step.title} className="step-image" loading="lazy" />
               </div>
               <div className="step-content-wrapper">
                 <h3 className="step-title">{step.title}</h3>

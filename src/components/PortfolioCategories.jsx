@@ -232,7 +232,7 @@ const PortfolioCategories = () => {
                 }
                 alt={mainProject.title}
                 className="tile-image"
-
+                loading="lazy"
               />
               <div className="tile-overlay">
                 <h3 className="tile-title">{mainProject.title}</h3>
@@ -282,6 +282,7 @@ const PortfolioCategories = () => {
                   }
                   alt={topRightProject.title || topRightProject.title}
                   className="tile-image"
+                  loading="lazy"
                 />
                 <div className="tile-overlay">
                   <h4 className="tile-label">{topRightProject.title || topRightProject.title}</h4>
@@ -316,6 +317,7 @@ const PortfolioCategories = () => {
                   }
                   alt={bottomRightProject.title}
                   className="tile-image"
+                  loading="lazy"
                 />
                 <div className="tile-overlay">
                   <h4 className="tile-label">{bottomRightProject.title}</h4>
