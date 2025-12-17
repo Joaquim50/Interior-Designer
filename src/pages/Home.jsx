@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HeroSlider from "../components/HeroSlider";
 import Section from "../components/Section";
-import ProjectCard from "../components/ProjectCard";
-import ConceptStats from "../components/ConceptStats";
-import WhoWeAre from "../components/WhoWeAre";
+// import ProjectCard from "../components/ProjectCard";
+// import ConceptStats from "../components/ConceptStats";
+// import WhoWeAre from "../components/WhoWeAre";
 import ContactSection from "../components/ContactSection";
 import PortfolioCategories from "../components/PortfolioCategories";
 import ProcessTimeline from "../components/ProcessTimeline";
 import SectorsSection from "../components/SectorsSection";
-import heroImg from "../assets/hero.png";
+// import heroImg from "../assets/hero.png";
 import { projects, services } from "../data";
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
       image:
         "/images/home/hero_slider/DSC08465.jpg",
       title: "Just Imagine, We'll Create",
-      subtitle: "Turnkey Interior Solutions for Discerning Clients",
+      subtitle: "Trivie Interrior Solutions for Discerning Clients",
       description: "",
       ctaText: "View Our Work",
       ctaLink: "/portfolio",
@@ -87,7 +87,7 @@ const Home = () => {
       <HeroSlider
         slides={heroSlides}
         staticTitle="Just Imagine, We'll Create"
-        staticSubtitle="Turnkey Interior Solutions for Discerning Clients"
+        staticSubtitle="Trivie Interrior Solutions for Discerning Clients"
         staticCtaText="View Portfolio"
         staticCtaLink="/portfolio"
       />
@@ -104,7 +104,7 @@ const Home = () => {
               <p className="text-lead">
                 At Trivie Interriors, with 15+ years of transforming spaces
                 across Mumbai, we blend industry expertise with modern project
-                management to deliver smooth, stress-free, turnkey interior
+                management to deliver smooth, stress-free, trivie interrior
                 solutions through a refined mix of image-led and text-driven
                 design storytelling.
               </p>

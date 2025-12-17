@@ -482,11 +482,11 @@ const Portfolio = () => {
         staticTitle="Our Work"
         staticSubtitle="Transforming Visions into Exceptional Spaces"
         staticDescription="For over 15 years, we've delivered precision-crafted interiors across Mumbai. Explore our portfolio of completed residential, commercial, hospitality, and data centre projects that showcase our commitment to quality and innovation."
-        staticCtaText="View Project"
-        onCtaClick={(slide) => openLightbox(slide.projectData)}
+        staticCtaText="View Projects"
+        staticCtaLink="#portfolio-grid"
       />
 
-      <Section className="text-center" style={{ padding: "var(--space-md) 0" }}>
+      <Section id="portfolio-grid" className="text-center" style={{ padding: "var(--space-md) 0", scrollMarginTop: "100px" }}>
         {/* Filter Navigation */}
         <div className="category-nav">
           {allCategories.map((category) => (
