@@ -76,6 +76,7 @@ const About = () => {
                   display: "block",
                   borderRadius: "var(--radius-md)",
                 }}
+                loading="lazy"
               />
             </div>
           </div>
@@ -99,6 +100,7 @@ const About = () => {
                   objectFit: "cover",
                   borderRadius: "var(--radius-sm)",
                 }}
+                loading="lazy"
               />
               <img
                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80"
@@ -109,6 +111,7 @@ const About = () => {
                   objectFit: "cover",
                   borderRadius: "var(--radius-sm)",
                 }}
+                loading="lazy"
               />
               <img
                 src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=500&q=80"
@@ -119,6 +122,7 @@ const About = () => {
                   objectFit: "cover",
                   borderRadius: "var(--radius-sm)",
                 }}
+                loading="lazy"
               />
               <img
                 src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=500&q=80"
@@ -129,6 +133,7 @@ const About = () => {
                   objectFit: "cover",
                   borderRadius: "var(--radius-sm)",
                 }}
+                loading="lazy"
               />
             </div>
             <div className="about-content">
@@ -342,6 +347,7 @@ const About = () => {
                     height: "300px",
                     objectFit: "cover",
                   }}
+                  loading="lazy"
                 />
                 <h4 style={{ marginBottom: "0.25rem" }}>Sanjiv C. Mehra</h4>
                 <p style={{ color: "var(--color-accent)", fontSize: "0.9rem" }}>
@@ -359,6 +365,7 @@ const About = () => {
                     height: "300px",
                     objectFit: "cover",
                   }}
+                  loading="lazy"
                 />
                 <h4 style={{ marginBottom: "0.25rem" }}>Kavash Mehra</h4>
                 <p style={{ color: "var(--color-accent)", fontSize: "0.9rem" }}>

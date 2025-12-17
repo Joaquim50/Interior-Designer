@@ -12,7 +12,7 @@ const ProjectCard = ({ id, title, category, image, onClick }) => {
       aria-label={`View project: ${title}`}
     >
       <div className="project-image-wrapper">
-        <img src={image} alt={title} className="project-image" />
+        <img src={image} alt={title} className="project-image" loading="lazy" />
         <div className="project-overlay"></div>
         <div className="project-icon">
           <ArrowRight size={24} strokeWidth={1.5} />

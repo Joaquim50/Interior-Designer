@@ -483,7 +483,7 @@ const Portfolio = () => {
         staticSubtitle="Transforming Visions into Exceptional Spaces"
         staticDescription="For over 15 years, we've delivered precision-crafted interiors across Mumbai. Explore our portfolio of completed residential, commercial, hospitality, and data centre projects that showcase our commitment to quality and innovation."
         staticCtaText="View Projects"
-        staticCtaLink="#portfolio-grid"
+        staticCtaLink="#portfolio-grid" 
       />
 
       <Section id="portfolio-grid" className="text-center" style={{ padding: "var(--space-md) 0", scrollMarginTop: "100px" }}>

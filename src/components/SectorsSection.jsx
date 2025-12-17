@@ -73,6 +73,7 @@ const SectorsSection = () => {
                   src={sector.image}
                   alt={sector.title}
                   className="sector-image"
+                  loading="lazy"
                 />
               </div>
               <div className="sector-overlay"></div>

@@ -125,6 +125,7 @@ const Home = () => {
                   borderRadius: "var(--radius-md)",
                   boxShadow: "var(--shadow-lg)",
                 }}
+                loading="lazy"
               />
             </div>
           </div>
