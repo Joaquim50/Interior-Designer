@@ -2,38 +2,39 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
+import imgRes from "../assets/home/services_overview/_PIX3623.jpg";
+import imgCorp from "../assets/home/services_overview/PIX00511.jpg";
+import imgHosp from "../assets/home/services_overview/DSC04612.jpg";
+import imgData from "../assets/home/services_overview/_PIX5206.jpg";
+
 const SectorsSection = () => {
   const sectors = [
     {
       id: "residential",
       title: "Luxury Residential Interiors",
       headline: "Your Sanctuary, Perfected",
-      image:
-        "images/home/services_overview/_PIX3623.jpg",
+      image: imgRes,
       link: "/services",
     },
     {
       id: "corporate",
       title: "Corporate Office Fit-Outs",
       headline: "Environments that Boost Productivity & Reflect Your Brand",
-      image:
-        "images/home/services_overview/PIX00511.jpg",
+      image: imgCorp,
       link: "/services",
     },
     {
       id: "hospitality",
       title: "Hospitality & Hotel Interiors",
       headline: "Spaces that Welcome, Impress, and Endure",
-      image:
-        "images/home/services_overview/DSC04612.jpg",
+      image: imgHosp,
       link: "/services",
     },
     {
       id: "datacentre",
       title: "Data Centre Interiors",
       headline: "Precision-Engineered Interiors for Critical Environments",
-      image:
-        "images/home/services_overview/_PIX5206.jpg",
+      image: imgData,
       link: "/services",
     },
   ];

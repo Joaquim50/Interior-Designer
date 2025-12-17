@@ -1,11 +1,15 @@
 import React from "react";
 import { Check, Clock, Award, MessageCircle, Smile } from "lucide-react";
 import HeroSlider from "../components/HeroSlider";
+import sanjivImg from "../assets/about/our_team/Sanjiv.jpeg";
+import kavashImg from "../assets/about/our_team/Kavash.jpg";
+
+import heroImg from "../assets/about/hero_slider/_PIX5211.jpg";
 
 const About = () => {
   const heroSlides = [
     {
-      image:"/images/about/hero_slider/_PIX5211.jpg",
+      image: heroImg,
       alt: "Professional Office Interior",
     },
   ];
@@ -15,7 +19,7 @@ const About = () => {
       <HeroSlider
         slides={heroSlides}
         staticTitle="Calm Confidence in Every Space We Create"
-        staticSubtitle="15+ Years of Turnkey Interior Excellence Across Mumbai"
+        staticSubtitle="15+ Years of Trivie Interrior Excellence Across Mumbai"
         staticDescription="Experience the unique advantage of a leadership team that blends years of industry wisdom with cutting-edge project management. Where traditional craftsmanship meets modern efficiency."
         staticCtaText="View Our Portfolio"
         staticCtaLink="/portfolio"
@@ -329,7 +333,7 @@ const About = () => {
             <div className="team-grid">
               <div className="team-member">
                 <img
-                  src="/images/about/our_team/Sanjiv.jpeg"
+                  src={sanjivImg}
                   alt="Sanjiv C. Mehra"
                   style={{
                     width: "100%",
@@ -346,7 +350,7 @@ const About = () => {
               </div>
               <div className="team-member">
                 <img
-                  src="images/about/our_team/Kavash.jpg"
+                  src={kavashImg}
                   alt="Kavash Mehra"
                   style={{
                     width: "100%",

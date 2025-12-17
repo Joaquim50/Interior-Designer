@@ -9,16 +9,21 @@ import ContactSection from "../components/ContactSection";
 import PortfolioCategories from "../components/PortfolioCategories";
 import ProcessTimeline from "../components/ProcessTimeline";
 import SectorsSection from "../components/SectorsSection";
-import heroImg from "../assets/hero.png";
+import img1 from "../assets/home/hero_slider/DSC08465.jpg";
+import img2 from "../assets/home/hero_slider/DSC08722.jpg";
+import img3 from "../assets/home/hero_slider/DSC09255.jpg";
+import img4 from "../assets/home/hero_slider/DSC09429.jpg";
+import img5 from "../assets/home/hero_slider/PIX08564.jpg";
+import img6 from "../assets/home/hero_slider/_PIX4683.jpg";
+import aboutImg from "../assets/home/PIX09196.jpg";
 import { projects, services } from "../data";
 
 const Home = () => {
   const heroSlides = [
     {
-      image:
-        "/images/home/hero_slider/DSC08465.jpg",
+      image: img1,
       title: "Just Imagine, We'll Create",
-      subtitle: "Turnkey Interior Solutions for Discerning Clients",
+      subtitle: "Trivie Interrior Solutions for Discerning Clients",
       description: "",
       ctaText: "View Our Work",
       ctaLink: "/portfolio",
@@ -27,8 +32,7 @@ const Home = () => {
       duration: 6000,
     },
     {
-      image:
-        "/images/home/hero_slider/DSC08722.jpg",
+      image: img2,
       title: "Modern Luxury Living",
       subtitle: "Elevate Your Lifestyle",
       description:
@@ -38,8 +42,7 @@ const Home = () => {
       duration: 5000,
     },
     {
-      image:
-        "/images/home/hero_slider/DSC09255.jpg",
+      image: img3,
       title: "Timeless Elegance",
       subtitle: "Crafted for You",
       description: "Bespoke designs that stand the test of time.",
@@ -48,8 +51,7 @@ const Home = () => {
       duration: 5000,
     },
     {
-      image:
-        "/images/home/hero_slider/DSC09429.jpg",
+      image: img4,
       title: "Commercial Excellence",
       subtitle: "Inspiring Workspaces",
       description:
@@ -59,8 +61,7 @@ const Home = () => {
       duration: 5000,
     },
     {
-      image:
-        "/images/home/hero_slider/PIX08564.jpg",
+      image: img5,
       title: "Coastal Serenity",
       subtitle: "Nature Meets Design",
       description: "Bringing the outdoors in with organic textures and light.",
@@ -69,7 +70,7 @@ const Home = () => {
       duration: 5000,
     },
     {
-      image: "/images/home/hero_slider/_PIX4683.jpg",
+      image: img6,
       title: "Twilight Haven",
       subtitle: "Luxury in Harmony with Nature",
       description: "A seamless blend of warm interiors and tranquil outdoor landscapes, designed for quiet moments and meaningful gatherings.",
@@ -87,7 +88,7 @@ const Home = () => {
       <HeroSlider
         slides={heroSlides}
         staticTitle="Just Imagine, We'll Create"
-        staticSubtitle="Turnkey Interior Solutions for Discerning Clients"
+        staticSubtitle="Trivie Interrior Solutions for Discerning Clients"
         staticCtaText="View Portfolio"
         staticCtaLink="/portfolio"
       />
@@ -104,7 +105,7 @@ const Home = () => {
               <p className="text-lead">
                 At Trivie Interriors, with 15+ years of transforming spaces
                 across Mumbai, we blend industry expertise with modern project
-                management to deliver smooth, stress-free, turnkey interior
+                management to deliver smooth, stress-free, trivie interrior
                 solutions through a refined mix of image-led and text-driven
                 design storytelling.
               </p>
@@ -114,7 +115,7 @@ const Home = () => {
             </div>
             <div className="about-image-wrapper">
               <img
-                src="images/home/PIX09196.jpg"
+                src={aboutImg}
                 alt="Modern Interior Design"
                 className="about-image"
                 style={{
