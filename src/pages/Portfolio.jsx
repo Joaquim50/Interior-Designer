@@ -242,7 +242,7 @@
 //   // Dynamically generate categories from projects
 //   const categories = ["All"];
 //   const categorySet = new Set();
-  
+
 //   projects.forEach((project) => {
 //     // Add tags to categories
 //     if (project.tags && Array.isArray(project.tags)) {
@@ -253,7 +253,7 @@
 //       categorySet.add(project.category);
 //     }
 //   });
-  
+
 //   // Convert Set to array and sort
 //   const dynamicCategories = Array.from(categorySet).sort();
 //   const allCategories = [...categories, ...dynamicCategories];
@@ -380,12 +380,12 @@ const Portfolio = () => {
           const mappedProjects = data.map((item) => ({
             id: item._id,
             title: item.title,
-            category: Array.isArray(item.category) && item.category.length > 0 
-              ? item.category[0] 
+            category: Array.isArray(item.category) && item.category.length > 0
+              ? item.category[0]
               : "",
             tags: Array.isArray(item.category) ? item.category : [],
             subcategory: "",
-            image: item.thumbnail_image 
+            image: item.thumbnail_image
               ? formatImageUrl(item.thumbnail_image)
               : "",
             description: "", // Can be extracted from challenge if needed
@@ -428,7 +428,7 @@ const Portfolio = () => {
   // Dynamically generate categories from projects
   const categories = ["All"];
   const categorySet = new Set();
-  
+
   projects.forEach((project) => {
     // Add tags to categories
     if (project.tags && Array.isArray(project.tags)) {
@@ -439,7 +439,7 @@ const Portfolio = () => {
       categorySet.add(project.category);
     }
   });
-  
+
   // Convert Set to array and sort
   const dynamicCategories = Array.from(categorySet).sort();
   const allCategories = [...categories, ...dynamicCategories];
@@ -448,14 +448,14 @@ const Portfolio = () => {
     activeCategory === "All"
       ? projects
       : projects.filter((project) => {
-          // Check if project has tags array and if it includes the active category
-          if (project.tags && Array.isArray(project.tags)) {
-            const hasTag = project.tags.includes(activeCategory);
-            if (hasTag) return true;
-          }
-          // Also check the main category field
-          return project.category === activeCategory;
-        });
+        // Check if project has tags array and if it includes the active category
+        if (project.tags && Array.isArray(project.tags)) {
+          const hasTag = project.tags.includes(activeCategory);
+          if (hasTag) return true;
+        }
+        // Also check the main category field
+        return project.category === activeCategory;
+      });
 
   const openLightbox = (project) => {
     setSelectedProject(project);
@@ -493,9 +493,8 @@ const Portfolio = () => {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`category-btn ${
-                activeCategory === category ? "active" : ""
-              }`}
+              className={`category-btn ${activeCategory === category ? "active" : ""
+                }`}
             >
               {category}
             </button>

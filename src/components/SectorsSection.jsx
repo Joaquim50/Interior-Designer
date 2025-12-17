@@ -9,7 +9,7 @@ const SectorsSection = () => {
       title: "Luxury Residential Interiors",
       headline: "Your Sanctuary, Perfected",
       image:
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=80",
+        "images/home/services_overview/_PIX3623.jpg",
       link: "/services",
     },
     {
@@ -17,7 +17,7 @@ const SectorsSection = () => {
       title: "Corporate Office Fit-Outs",
       headline: "Environments that Boost Productivity & Reflect Your Brand",
       image:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80",
+        "images/home/services_overview/PIX00511.jpg",
       link: "/services",
     },
     {
@@ -25,7 +25,7 @@ const SectorsSection = () => {
       title: "Hospitality & Hotel Interiors",
       headline: "Spaces that Welcome, Impress, and Endure",
       image:
-        "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1920&q=80",
+        "images/home/services_overview/DSC04612.jpg",
       link: "/services",
     },
     {
@@ -33,7 +33,7 @@ const SectorsSection = () => {
       title: "Data Centre Interiors",
       headline: "Precision-Engineered Interiors for Critical Environments",
       image:
-        "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1920&q=80",
+        "images/home/services_overview/_PIX5206.jpg",
       link: "/services",
     },
   ];

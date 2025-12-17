@@ -16,7 +16,7 @@ const Contact = () => {
   const heroSlides = [
     {
       image:
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80",
+        "/images/contact/DSC08774.jpg",
       alt: "Contact Hero",
     },
   ];
