@@ -65,19 +65,43 @@ const About = () => {
                 Learn About Our Process
               </a>
             </div>
-            <div className="about-image">
-              <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80"
-                alt="Legacy Meets Innovation"
-                style={{
-                  width: "100%",
-                  height: "500px",
-                  objectFit: "cover",
-                  display: "block",
-                  borderRadius: "var(--radius-md)",
-                }}
-                loading="lazy"
-              />
+            <div className="team-grid">
+              <div className="team-member">
+                <img
+                  src={sanjivImg}
+                  alt="Sanjiv C. Mehra"
+                  style={{
+                    width: "100%",
+                    borderRadius: "var(--radius-md)",
+                    marginBottom: "1rem",
+                    height: "300px",
+                    objectFit: "cover",
+                  }}
+                  loading="lazy"
+                />
+                <h4 style={{ marginBottom: "0.25rem" }}>Sanjiv C. Mehra</h4>
+                <p style={{ color: "var(--color-accent)", fontSize: "0.9rem" }}>
+                  Managing Director
+                </p>
+              </div>
+              <div className="team-member">
+                <img
+                  src={kavashImg}
+                  alt="Kavash Mehra"
+                  style={{
+                    width: "100%",
+                    borderRadius: "var(--radius-md)",
+                    marginBottom: "1rem",
+                    height: "300px",
+                    objectFit: "cover",
+                  }}
+                  loading="lazy"
+                />
+                <h4 style={{ marginBottom: "0.25rem" }}>Kavash Mehra</h4>
+                <p style={{ color: "var(--color-accent)", fontSize: "0.9rem" }}>
+                  Director
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -304,7 +328,7 @@ const About = () => {
       </section>
 
       {/* Section 4: Meet Our Team */}
-      <section className="section-padding" style={{ background: "#f8f8f8" }}>
+      {/* <section className="section-padding" style={{ background: "#f8f8f8" }}>
         <div className="container">
           <div
             className="grid-2-col"
@@ -375,7 +399,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Section 5: Call to Action */}
       <section

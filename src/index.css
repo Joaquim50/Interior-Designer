@@ -203,6 +203,27 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .grid-2-col {
+    grid-template-columns: 1fr;
+    /* stack text + images */
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* two images */
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  .team-member {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+}
+
 .grid-3-col {
   display: grid;
   grid-template-columns: 1fr;
@@ -1101,7 +1122,7 @@ img {
 
 @media (max-width: 1024px) {
   .sector-headline {
-    e: 1rem;
+    font-size: 1rem;
   }
 
   .sector-content {
@@ -1125,6 +1146,7 @@ img {
     transform: translateY(0);
   }
 }
+
 
 .carousel-dot.active {
   background: #fff;
@@ -2525,6 +2547,7 @@ footer {
   box-shadow: 0 8px 25px rgba(214, 51, 64, 0.4);
   border: none;
   cursor: pointer;
+  width: auto;
 }
 
 .btn-global:hover {
