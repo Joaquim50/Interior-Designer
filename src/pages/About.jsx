@@ -5,7 +5,10 @@ import sanjivImg from "../assets/about/our_team/SanjivM.jpg";
 import kavashImg from "../assets/about/our_team/KavashM.jpeg";
 import { Link } from "react-router-dom";
 import heroImg from "../assets/about/hero_slider/_PIX5211.jpg";
-
+import image1 from "../assets/home/hero_slider/DSC08465.jpg";
+import image2 from "../assets/home/hero_slider/DSC08722.jpg";
+import image3 from "../assets/home/hero_slider/DSC09255.jpg";
+import image4 from "../assets/home/hero_slider/DSC09429.jpg";
 const About = () => {
   const heroSlides = [
     {
@@ -116,7 +119,7 @@ const About = () => {
           >
             <div className="about-image order-2-mobile about-image-grid">
               <img
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=500&q=80"
+                src={image1}
                 alt="Residential"
                 style={{
                   width: "100%",
@@ -127,7 +130,7 @@ const About = () => {
                 loading="lazy"
               />
               <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80"
+                src={image2}
                 alt="Corporate"
                 style={{
                   width: "100%",
@@ -138,7 +141,7 @@ const About = () => {
                 loading="lazy"
               />
               <img
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=500&q=80"
+                src={image3}
                 alt="Hospitality"
                 style={{
                   width: "100%",
@@ -149,7 +152,7 @@ const About = () => {
                 loading="lazy"
               />
               <img
-                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=500&q=80"
+                src={image4}
                 alt="Data Centre"
                 style={{
                   width: "100%",
@@ -182,9 +185,9 @@ const About = () => {
                 sector receives our signature attention to detail and systematic
                 approach.
               </p>
-              <a href="/services" className="btn btn-global">
+              <Link to="/services" className="btn btn-global">
                 Explore Our Services
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -437,9 +440,9 @@ const About = () => {
               are here to deliver exceptional results with complete peace of
               mind.
             </p>
-            <a href="/contact" className="btn-global">
+            <Link to="/contact" className="btn-global">
               Start Your Project Today
-            </a>
+            </Link>
           </div>
         </div>
       </section>
