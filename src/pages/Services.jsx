@@ -29,7 +29,7 @@ const Services = () => {
         "We've mastered the unique requirements of each sector, delivering spaces that function perfectly for their intended purpose.",
       cta: "View Sector Portfolio",
       image: expertiseImg,
-      link: "/services",
+      link: "/portfolio",
     },
     {
       id: "residential",
@@ -39,7 +39,7 @@ const Services = () => {
         "We transform houses into homes that reflect your personality and lifestyle. From apartments to villas, we create spaces that balance beauty, comfort, and functionality with timeless elegance.",
       cta: "Explore Residential Projects",
       image: resImg,
-      link: "/services",
+      link: "/portfolio",
     },
     {
       id: "commercial",
@@ -49,7 +49,7 @@ const Services = () => {
         "Create workspaces that inspire innovation and foster collaboration. We design and execute corporate interiors that enhance employee wellbeing while powerfully communicating your brand identiy.",
       cta: "View Office Projects",
       image: commImg,
-      link: "/services",
+      link: "/portfolio",
     },
     {
       id: "kitchens",
@@ -59,7 +59,7 @@ const Services = () => {
         "Experience kitchens that blend sophisticated aesthetics with ergonomic efficiecy. Our custom modular solutions maximize space utilization while creating the heart of your home.",
       cta: "Explore Kitchen Designs",
       image: kitchenImg,
-      link: "/services",
+      link: "/portfolio",
     },
     {
       id: "renovation",
@@ -69,7 +69,7 @@ const Services = () => {
         "Breathe new life into your existting spaces with our comprehensive renovation services. We reimagine and rebuild while respecting your timeline and mimizing disruption.",
       cta: "Discuss Renovation",
       image: renoImg,
-      link: "/services",
+      link: "/portfolio",
     },
     {
       id: "styling",
@@ -79,7 +79,7 @@ const Services = () => {
         "Complete your space with professional styling that adds personality and character. We select and arrange furnishings, artwork, and accessories to create cohesive, magazine-worthy interiors.",
       cta: "Explore Styling Services",
       image: stylingImg,
-      link: "/services",
+      link: "/portfolio",
     },
   ];
 

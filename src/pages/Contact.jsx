@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 import { Link } from "react-router-dom";
 import {
   MapPin,
@@ -22,6 +24,85 @@ const Contact = () => {
     },
   ];
 
+  const [categories, setCategories] = useState([]);
+  const API_BASE_URL =
+    import.meta.env.VITE_API_BASE_URL || "http://localhost:2000";
+
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/v1/category/get`);
+        if (response.ok) {
+          const result = await response.json();
+          if (result.status && Array.isArray(result.data)) {
+            setCategories(result.data);
+          }
+        }
+      } catch (error) {
+        console.error("Error fetching categories:", error);
+      }
+    };
+    fetchCategories();
+  }, [API_BASE_URL]);
+
+  const validationSchema = Yup.object().shape({
+    name: Yup.string().required("Name is required").min(2, "Name is too short"),
+    email: Yup.string().email("Invalid email").required("Email is required"),
+    phone: Yup.string().matches(/^[0-9+ ]+$/, "Invalid phone number").min(10, "Invalid phone number").max(10, "Invalid phone number"),
+    projectType: Yup.string().required("Please select a project type"),
+    subject: Yup.string().required("Subject is required"),
+    message: Yup.string().required("Message is required").min(10, "Message must be at least 10 characters"),
+  });
+
+  const [formStatus, setFormStatus] = useState({ type: "", message: "" });
+
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      email: "",
+      phone: "",
+      projectType: "",
+      subject: "",
+      message: "",
+    },
+    validationSchema,
+    onSubmit: async (values, { setSubmitting, resetForm }) => {
+      setFormStatus({ type: "", message: "" });
+      try {
+        const response = await fetch(`${API_BASE_URL}/api/v1/contact/send-email`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.status) {
+          setFormStatus({
+            type: "success",
+            message: "Thank you! Your message has been sent successfully.",
+          });
+          resetForm();
+        } else {
+          setFormStatus({
+            type: "error",
+            message: result.message || "Something went wrong. Please try again.",
+          });
+        }
+      } catch (error) {
+        console.error("Error sending email:", error);
+        setFormStatus({
+          type: "error",
+          message: "Failed to connect to the server. Please check your internet connection.",
+        });
+      } finally {
+        setSubmitting(false);
+      }
+    },
+  });
+
   return (
     <div className="page-contact">
       <HeroSlider
@@ -33,11 +114,9 @@ const Contact = () => {
         staticCtaLink="#contact-form"
       />
 
-      {/* 50/50 Split Section */}
       <section id="contact-form" className="contact-split-section">
         <div className="container">
           <div className="contact-grid">
-            {/* LEFT COLUMN - Contact Form */}
             <div
               className="contact-form-wrapper"
               style={{
@@ -58,25 +137,54 @@ const Contact = () => {
                   We're Excited to Hear Your Ideas
                 </p>
               </div>
-              <form className="premium-form">
+
+              {formStatus.message && (
+                <div
+                  style={{
+                    padding: "1rem",
+                    marginBottom: "2rem",
+                    borderRadius: "var(--radius-sm)",
+                    background:
+                      formStatus.type === "success"
+                        ? "rgba(40, 167, 69, 0.1)"
+                        : "rgba(220, 53, 69, 0.1)",
+                    color:
+                      formStatus.type === "success" ? "#28a745" : "#dc3545",
+                    border: `1px solid ${formStatus.type === "success" ? "#28a745" : "#dc3545"
+                      }`,
+                  }}
+                >
+                  {formStatus.message}
+                </div>
+              )}
+
+              <form className="premium-form" onSubmit={formik.handleSubmit}>
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="name">Name</label>
                     <input
                       type="text"
                       id="name"
-                      className="form-input"
+                      className={`form-input ${formik.touched.name && formik.errors.name ? 'error' : ''}`}
                       placeholder="Your Name"
+                      {...formik.getFieldProps('name')}
                     />
+                    {formik.touched.name && formik.errors.name && (
+                      <span className="error-message" style={{ color: "#dc3545", fontSize: "0.8rem", marginTop: "0.25rem", display: "block" }}>{formik.errors.name}</span>
+                    )}
                   </div>
                   <div className="form-group">
                     <label htmlFor="email">Email</label>
                     <input
                       type="email"
                       id="email"
-                      className="form-input"
+                      className={`form-input ${formik.touched.email && formik.errors.email ? 'error' : ''}`}
                       placeholder="Your Email"
+                      {...formik.getFieldProps('email')}
                     />
+                    {formik.touched.email && formik.errors.email && (
+                      <span className="error-message" style={{ color: "#dc3545", fontSize: "0.8rem", marginTop: "0.25rem", display: "block" }}>{formik.errors.email}</span>
+                    )}
                   </div>
                 </div>
 
@@ -86,23 +194,35 @@ const Contact = () => {
                     <input
                       type="tel"
                       id="phone"
-                      className="form-input"
-                      placeholder="+1 (555) 000-0000"
+                      className={`form-input ${formik.touched.phone && formik.errors.phone ? 'error' : ''}`}
+                      placeholder="+91 98123 45678"
+                      {...formik.getFieldProps('phone')}
                     />
+                    {formik.touched.phone && formik.errors.phone && (
+                      <span className="error-message" style={{ color: "#dc3545", fontSize: "0.8rem", marginTop: "0.25rem", display: "block" }}>{formik.errors.phone}</span>
+                    )}
                   </div>
                   <div className="form-group">
-                    <label htmlFor="interest">I'm Interested In...</label>
+                    <label htmlFor="projectType">I'm Interested In...</label>
                     <div className="select-wrapper">
-                      <select id="interest" className="form-select">
-                        <option value="" disabled selected>
+                      <select
+                        id="projectType"
+                        className={`form-select ${formik.touched.projectType && formik.errors.projectType ? 'error' : ''}`}
+                        {...formik.getFieldProps('projectType')}
+                      >
+                        <option value="" disabled>
                           Select Project Type
                         </option>
-                        <option value="luxury">Luxury Interiors</option>
-                        <option value="corporate">Corporate Office</option>
-                        <option value="hospitality">Hospitality</option>
-                        <option value="data-centre">Data Centre</option>
+                        {categories.map((cat) => (
+                          <option key={cat._id} value={cat.name}>
+                            {cat.name}
+                          </option>
+                        ))}
                       </select>
                     </div>
+                    {formik.touched.projectType && formik.errors.projectType && (
+                      <span className="error-message" style={{ color: "#dc3545", fontSize: "0.8rem", marginTop: "0.25rem", display: "block" }}>{formik.errors.projectType}</span>
+                    )}
                   </div>
                 </div>
 
@@ -111,9 +231,13 @@ const Contact = () => {
                   <input
                     type="text"
                     id="subject"
-                    className="form-input"
+                    className={`form-input ${formik.touched.subject && formik.errors.subject ? 'error' : ''}`}
                     placeholder="Project Inquiry"
+                    {...formik.getFieldProps('subject')}
                   />
+                  {formik.touched.subject && formik.errors.subject && (
+                    <span className="error-message" style={{ color: "#dc3545", fontSize: "0.8rem", marginTop: "0.25rem", display: "block" }}>{formik.errors.subject}</span>
+                  )}
                 </div>
 
                 <div className="form-group">
@@ -121,13 +245,21 @@ const Contact = () => {
                   <textarea
                     id="message"
                     rows="5"
-                    className="form-textarea"
+                    className={`form-textarea ${formik.touched.message && formik.errors.message ? 'error' : ''}`}
                     placeholder="Tell us about your project..."
+                    {...formik.getFieldProps('message')}
                   ></textarea>
+                  {formik.touched.message && formik.errors.message && (
+                    <span className="error-message" style={{ color: "#dc3545", fontSize: "0.8rem", marginTop: "0.25rem", display: "block" }}>{formik.errors.message}</span>
+                  )}
                 </div>
 
-                <button type="submit" className="btn-global">
-                  <span>Send Message</span>
+                <button
+                  type="submit"
+                  className="btn-global"
+                  disabled={formik.isSubmitting}
+                >
+                  <span>{formik.isSubmitting ? "Sending..." : "Send Message"}</span>
                   <ArrowRight size={18} />
                 </button>
               </form>
