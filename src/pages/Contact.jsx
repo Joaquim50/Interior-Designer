@@ -194,7 +194,7 @@ const Contact = () => {
                       type="tel"
                       id="phone"
                       className={`form-input ${formik.touched.phone && formik.errors.phone ? 'error' : ''}`}
-                      placeholder="+91 98123 45678"
+                      placeholder="98123 45678"
                       {...formik.getFieldProps('phone')}
                     />
                     {formik.touched.phone && formik.errors.phone && (
