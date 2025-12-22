@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "./Section";
 import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const TeamCard = ({ image, label, name }) => {
   return (
@@ -11,15 +12,15 @@ const TeamCard = ({ image, label, name }) => {
         <div className="team-actions">
           <button className="btn-read-more">READ MORE</button>
           <div className="social-icons">
-            <a href="#" className="social-icon">
+            <Link href="#" className="social-icon">
               <Facebook size={18} />
-            </a>
-            <a href="#" className="social-icon">
+            </Link>
+            <Link href="#" className="social-icon">
               <Twitter size={18} />
-            </a>
-            <a href="#" className="social-icon">
+            </Link>
+            <Link href="#" className="social-icon">
               <Linkedin size={18} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
