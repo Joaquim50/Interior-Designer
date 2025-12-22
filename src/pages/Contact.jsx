@@ -323,30 +323,30 @@ const Contact = () => {
                     }}
                   >
                     <h4 style={{ marginBottom: 0 }}>Follow Us:</h4>
-                    <Link
+                    <a
                       href="https://www.linkedin.com/company/trivie-interiors"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ color: "var(--color-text-body)" }}
                     >
                       <Linkedin size={24} />
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                       href="http://www.instagram.com/trivie_interriors"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ color: "var(--color-text-body)" }}
                     >
                       <Instagram size={24} />
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                       href="http://www.facebook.com/trivieinterriors"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ color: "var(--color-text-body)" }}
                     >
                       <Facebook size={24} />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
