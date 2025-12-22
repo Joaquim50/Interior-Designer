@@ -1,14 +1,14 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import image1 from "../assets/process/process-two.jpg";
 const ContactSection = () => {
   return (
     <section className="cta-banner-section">
       {/* Background Image & Overlay */}
       <div className="cta-banner-bg">
         <img
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80"
+          src={image1}
           alt="Premium Interior Design"
           className="cta-bg-image"
           loading="lazy"
