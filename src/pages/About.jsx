@@ -1,8 +1,8 @@
 import React from "react";
 import { Check, Clock, Award, MessageCircle, Smile } from "lucide-react";
 import HeroSlider from "../components/HeroSlider";
-import sanjivImg from "../assets/about/our_team/Sanjiv.jpeg";
-import kavashImg from "../assets/about/our_team/Kavash.jpg";
+import sanjivImg from "../assets/about/our_team/SanjivM.jpg";
+import kavashImg from "../assets/about/our_team/KavashM.jpeg";
 
 import heroImg from "../assets/about/hero_slider/_PIX5211.jpg";
 
@@ -219,9 +219,6 @@ const About = () => {
                 typically associated with interior projects. This father-son
                 synergy isn't just our story - it's your competitive advantage.
               </p>
-              <a href="/testimonials" className="btn btn-global">
-                See Client Testimonials
-              </a>
             </div>
             <div className="about-image">
               <div className="features-grid">

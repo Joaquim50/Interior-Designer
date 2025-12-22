@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   MapPin,
   Phone,
@@ -10,6 +10,15 @@ import {
 } from "lucide-react";
 
 const Footer = () => {
+  const location = useLocation();
+
+  const handleContactClick = (e) => {
+    if (location.pathname === "/contact") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <footer>
       {/* Top Footer Section */}
@@ -38,6 +47,7 @@ const Footer = () => {
                 to="/contact"
                 className="btn-global"
                 style={{ width: "fit-content" }}
+                onClick={handleContactClick}
               >
                 GET TRIVIA NOW
               </Link>
@@ -76,6 +86,7 @@ const Footer = () => {
                   padding: "0.5rem 1.5rem",
                   width: "fit-content",
                 }}
+                onClick={handleContactClick}
               >
                 GET AN ESTIMATE
               </Link>
@@ -108,7 +119,9 @@ const Footer = () => {
                   <Link to="/services">Services</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/contact" onClick={handleContactClick}>
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>
