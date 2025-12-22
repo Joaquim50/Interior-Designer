@@ -260,7 +260,6 @@ const Contact = () => {
                   disabled={formik.isSubmitting}
                 >
                   <span>{formik.isSubmitting ? "Sending..." : "Send Message"}</span>
-                  <ArrowRight size={18} />
                 </button>
               </form>
 

@@ -9,6 +9,7 @@ import image1 from "../assets/home/hero_slider/DSC08465.jpg";
 import image2 from "../assets/home/hero_slider/DSC08722.jpg";
 import image3 from "../assets/home/hero_slider/DSC09255.jpg";
 import image4 from "../assets/home/hero_slider/DSC09429.jpg";
+import image5 from "../assets/home/hero_slider/_PIX4683.jpg"
 const About = () => {
   const heroSlides = [
     {
@@ -405,7 +406,7 @@ const About = () => {
       <section
         className="section-padding"
         style={{
-          background: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80')`,
+          background: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${image5})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           color: "#fff",
