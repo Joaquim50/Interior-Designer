@@ -2,7 +2,7 @@ import React from "react";
 import { Check, Clock, Award, MessageCircle, Smile } from "lucide-react";
 import HeroSlider from "../components/HeroSlider";
 import sanjivImg from "../assets/about/our_team/SanjivM.jpg";
-import kavashImg from "../assets/about/our_team/KavashM.jpeg";
+import kavashImg from "../assets/about/our_team/KavashM.jpg";
 import { Link } from "react-router-dom";
 import heroImg from "../assets/about/hero_slider/_PIX5211.jpg";
 import image1 from "../assets/home/hero_slider/DSC08465.jpg";
