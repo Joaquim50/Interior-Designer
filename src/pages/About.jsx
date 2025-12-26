@@ -30,7 +30,9 @@ const About = () => {
       />
 
       {/* Section 1: Our Story */}
-      <section className="section-padding" style={{ background: "#fff" }}>
+      <section className="section-padding " style={{ background: "#fff"
+          //  ,border: "1px solid #e0e0e0"
+           }}>
         <div className="container">
           <div
             className="grid-2-col"
@@ -60,7 +62,7 @@ const About = () => {
                   marginBottom: "2rem",
                 }}
               >
-                Managing Director Sanjiv C. Mehra brings of 15 years of
+                Managing Director Sanjiv C. Mehra brings 15 years of
                 construction expertise, while Director Kavash Mehra translates
                 this legacy into streamlined, transparent processes through
                 modern project management systems.
@@ -69,6 +71,7 @@ const About = () => {
                 Learn About Our Process
               </Link>
             </div>
+
             <div className="team-grid">
               <div className="team-member">
                 <img
@@ -110,9 +113,46 @@ const About = () => {
           </div>
         </div>
       </section>
+{/* addition adding */}
+<div
+
+  style={{
+    textAlign: "center",
+    padding: "1rem 1rem",
+    margin: "0",
+    background: "#f8f8f8"
+  }}
+>
+  <h2
+    className="heading-lg"
+    style={{
+      // borderBottom: "3px solid #d4af37",
+      display: "inline-block",
+      paddingBottom: "0.5rem",
+      margin: "0 0 1rem 0",
+      letterSpacing: "1px",
+    }}
+  >
+    Our Mission
+  </h2>
+
+  <p
+    style={{
+      maxWidth: "700px",
+      margin: "0 auto",
+      color: "var(--color-text-light)",
+      lineHeight: "1.8",
+      fontSize: "1.05rem",
+    }}
+  >
+    Our mission is to build more than interiors – we build success stories. By committing to our promises, embracing challenges, and cooperating as one dedicated team.
+  </p>
+</div>
+
+
 
       {/* Section 2: Our Expertise */}
-      <section className="section-padding" style={{ background: "#f8f8f8" }}>
+      <section className="section-padding" style={{background: "#fff"  }}>
         <div className="container">
           <div
             className="grid-2-col"
@@ -195,7 +235,7 @@ const About = () => {
       </section>
 
       {/* Section 3: Why Choose Us */}
-      <section className="section-padding" style={{ background: "#fff" }}>
+      <section className="section-padding" style={{background: "#f8f8f8" }}>
         <div className="container">
           <div
             className="grid-2-col"
